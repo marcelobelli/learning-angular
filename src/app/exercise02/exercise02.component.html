@@ -1,0 +1,21 @@
+
+<legend>Exercise 02</legend>
+
+<div class="form-group">
+  <label for="">Username</label>
+  <input 
+    type="text" 
+    class="form-control"
+    [(ngModel)]="username"
+    (input)="onEnableSubmitBtn()">
+  
+  <p>{{username}}</p>
+  
+</div>
+
+<button 
+  type="submit" 
+  class="btn btn-primary" 
+  [disabled]="!canSubmit"
+  (click)="onClickSubmitBtn()">Submit</button>
+
