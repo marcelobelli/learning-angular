@@ -6,8 +6,7 @@
   <input 
     type="text" 
     class="form-control"
-    [(ngModel)]="username"
-    (input)="onEnableSubmitBtn()">
+    [(ngModel)]="username">
   
   <p>{{username}}</p>
   
@@ -16,6 +15,6 @@
 <button 
   type="submit" 
   class="btn btn-primary" 
-  [disabled]="!canSubmit"
-  (click)="onClickSubmitBtn()">Submit</button>
+  [disabled]="username === ''"
+  (click)="username = ''">Submit</button>
 

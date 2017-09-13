@@ -7,25 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercise02Component implements OnInit {
   username = '';
-  canSubmit = false;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  onEnableSubmitBtn(event: Event) {
-    if (this.username.length > 0) {
-      this.canSubmit = true;
-    }
-    else {
-      this.canSubmit = false;
-    }
-  }
-
-  onClickSubmitBtn() {
-    this.username = '';
-    this.canSubmit = false;
-  }
-
+  
 }
