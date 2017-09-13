@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exercise02.component.css']
 })
 export class Exercise02Component implements OnInit {
-  username = "";
+  username = '';
   canSubmit = false;
 
   constructor() { }
@@ -24,7 +24,7 @@ export class Exercise02Component implements OnInit {
   }
 
   onClickSubmitBtn() {
-    this.username = "";
+    this.username = '';
     this.canSubmit = false;
   }
 
