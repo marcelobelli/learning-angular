@@ -1,0 +1,11 @@
+<h1>Details</h1>
+<button 
+    type="button" 
+    class="btn btn-success"
+    (click)="onClickDetails()">Display Details</button>
+<br>
+<p *ngIf="showDetail">Secret Password = {{password}}</p>
+<p 
+    [ngStyle]="{'background-color': message >= 5 ? 'blue' : 'transparent'}" 
+    [ngClass]="{white: message >= 5}"
+    *ngFor="let message of messages">{{message}}</p>

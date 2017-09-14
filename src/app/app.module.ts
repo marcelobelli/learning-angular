@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SuccessComponent } from './success/success.component';
 import { WarningComponent } from './warning/warning.component';
 import { Exercise02Component } from './exercise02/exercise02.component';
+import { Exercise03Component } from './exercise03/exercise03.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SuccessComponent,
     WarningComponent,
-    Exercise02Component
+    Exercise02Component,
+    Exercise03Component
   ],
   imports: [
     BrowserModule,
