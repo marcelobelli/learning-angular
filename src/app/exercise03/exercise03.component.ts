@@ -18,7 +18,7 @@ export class Exercise03Component implements OnInit {
 
   onClickDetails() {
     this.showDetail = !this.showDetail;
-    this.messages.push(this.messages.length + 1);
+    this.messages.push(Date());
   }
  
 }

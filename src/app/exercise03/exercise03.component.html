@@ -6,6 +6,6 @@
 <br>
 <p *ngIf="showDetail">Secret Password = {{password}}</p>
 <p 
-    [ngStyle]="{'background-color': message >= 5 ? 'blue' : 'transparent'}" 
-    [ngClass]="{white: message >= 5}"
-    *ngFor="let message of messages">{{message}}</p>
+    *ngFor="let message of messages; let i = index"
+    [ngStyle]="{'background-color': i > 4 ? 'blue' : 'transparent'}" 
+    [ngClass]="{white: i > 4}">{{message}}</p>
